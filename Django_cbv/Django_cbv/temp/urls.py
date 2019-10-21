@@ -30,7 +30,7 @@ router.register(r'category', CategoryViewSet, base_name='api-category')
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='index'),
-    url(r'^category/(?P<category_id>\d+)/$', CategoryView.as_view(), name='category-list'),
+    url(r'^category/(?P<category_id>\d+)/$', CategoryView.as_view(), name='category-list'),  # (?P<category_id>\d+) 匹配数字、并替换
     url(r'^tag/(?P<tag_id>\d+)/$', TagView.as_view(), name='tag-list'),
     url(r'^search/$', SearchView.as_view(), name='search'),
     url(r'^comment/$', CommentView.as_view(), name='comment'),
