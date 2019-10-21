@@ -24,3 +24,4 @@ urlpatterns = [
     url(r'^admin/', custom_site.urls)  # 对应一个site (urt与path相比、url支持正则）用来管理业务
 
 ]
+
