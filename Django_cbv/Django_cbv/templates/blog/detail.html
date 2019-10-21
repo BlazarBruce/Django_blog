@@ -5,7 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-    <hl>detail</hl>
-    {{ name }}
+    {% if post %}
+        <h1>{{ post.title }}</h1>
+        <div>
+            <Span>分类：{{ post.category.name }}</Span>
+            <span>作者: {{ post.owner.username }}</span>
+        </div>
+        <hr/>
+        <P>{{ post.content }}</p>
+    {% endif %}
 </body>
 </html>
