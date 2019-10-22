@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Django博客系统</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/img/favicon.ico" />
 </head>
 <body>
+    {% if tag %}
+    标签页：{{ tag.name }}
+    {% endif %}
+
+    {% if category %}
+    分类页：{{ category.name }}
+    {% endif %}
+
     <Ul>
         {% for post in post_list %}
             <li>
