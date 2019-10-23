@@ -60,6 +60,7 @@ class Tag(models.Model):
         return self.name
 
 class Post(models.Model):
+
     STATUS_NORMAL = 1
     STATUS_DELETE = 0
     STATUS_DRAFT = 2
@@ -93,6 +94,7 @@ class Post(models.Model):
 
     @staticmethod
     def get_by_tag(tag_id):
+        """静态方法不需要 self 参数和 cls参数"""
         try:
             tag = Tag.objects.get(id=tag_id)
         except Tag.DoesNotExist:
@@ -117,6 +119,7 @@ class Post(models.Model):
 
     @classmethod
     def latest_posts(cls):
+        """ 类方法一个明显的特点是具有cls参数"""
         return cls.objects.filter(status=cls.STATUS_NORMAL)
 
 
