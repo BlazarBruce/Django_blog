@@ -25,4 +25,8 @@ def post_detail(request, post_id):
         post = Post.objects.get(id=post_id)
     except Post.DoesNotExist:
         post = None
-    return render(request, 'blog/detail.html', context={'post': post})
+    context = {
+        'post': post
+    }
+    context.update(Category.get_navs())
+    return render(request, 'blog/detail.html', context=context)

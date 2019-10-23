@@ -6,6 +6,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../static/img/favicon.ico" />
 </head>
 <body>
+    <div>顶部分类：
+        {% for cate in navs %}
+            <a href="/category/{{ cate.id }}">{{ cate.name }}</a>
+        {% endfor %}
+    </div>
+    <hr/>
+
     {% if tag %}
     标签页：{{ tag.name }}
     {% endif %}
@@ -26,5 +33,11 @@
             </li>
         {% endfor %}
     </Ul>
+    <hr/>
+    <div>底部分类：
+        {% for cate in categories %}
+            <a href="/category/{{ cate.id }}">{{ cate.name }}</a>
+        {% endfor %}
+    </div>
 </body>
 </html>
