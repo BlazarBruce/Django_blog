@@ -102,6 +102,7 @@ class Post(models.Model):
     owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.DO_NOTHING)
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")  # verbose_name 字段对应的展示文案
 
+    # pv和UV ，它们用来统计每篇文章的防问量
     pv = models.PositiveIntegerField(default=1)
     uv = models.PositiveIntegerField(default=1)
 
@@ -141,6 +142,10 @@ class Post(models.Model):
     def latest_posts(cls):
         """ 类方法一个明显的特点是具有cls参数"""
         return cls.objects.filter(status=cls.STATUS_NORMAL)
+
+    @classmethod
+    def hot_posts(cls):
+        return cls.objects.filter(status=cls.STATUS_NORMAL).order_by('-pv')
 
 
 
