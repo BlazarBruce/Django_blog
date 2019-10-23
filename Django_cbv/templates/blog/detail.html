@@ -1,43 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="../../static/img/favicon.ico" />
-    <title>Title</title>
-</head>
-<body>
-    <div>顶部分类：
-        {% for cate in navs %}
-            <a href="/category/{{ cate.id }}">{{ cate.name }}</a>
-        {% endfor %}
-    </div>
-    <hr/>
+{% extends "./base.html" %}
+{% block title %} {{ post.title }} {% endblock %}
 
-    <h1>测试</h1>
-
+{% block main %}
     {% if post %}
-        <h1>{{ post.title }}</h1>
-        <div>
-            <Span>分类：{{ post.category.name }}</Span>
-            <span>作者: {{ post.owner.username }}</span>
-        </div>
-        <hr/>
-        <P>{{ post.content }}</p>
-    {% endif %}
-
+    <h1>{{ post.title }}</h1>
+    <div>
+        <span>分类:{{ post.category.name }}</span>
+        <span>作者:{{ post.owner.username }}</span>
+    </div>
     <hr/>
-    <div>底部分类：
-        {% for cate in categories %}
-            <a href="/category/{{ cate.id }}">{{ cate.name }}</a>
-        {% endfor %}
-    </div>
-
-    <div>侧边栏展示：
-        {% for sidebar in sidebars %}
-            <h4>{{ sidebar.title }}</h4>
-            {{ sidebar.content_html }}
-        {% endfor %}
-    </div>
-
-</body>
-</html>
+    <p>
+        {{ post.content }}
+    </p>
+    {% endif %}
+{% endblock %}
