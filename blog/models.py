@@ -122,4 +122,18 @@ class Post(models.Model):
         """ 类方法一个明显的特点是具有cls参数"""
         return cls.objects.filter(status=cls.STATUS_NORMAL)
 
+    @classmethod
+    def get_navs(cls):
+        """
+        类方法一个明显的特点是具有cls参数
+        这个函数用来获取所有的分类，并且区分是否为导航
+        """
+        categories = cls.objects.filter(status=cls.STATUS_NORMAL)
+        nav_categories = categories.filter(is_nav=True)
+        normal_categories = categories.filter(is_nav=False)
+        return {
+            'navs': nav_categories,
+            'categories': normal_categories,
+        }
+
 
