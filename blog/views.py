@@ -1,3 +1,9 @@
+"""
+需要了解源码流程
+特别是CBV
+FBV：类方法、静态方法、属性方法
+"""
+
 from django.shortcuts import render
 from .models import Post, Tag, Category
 from config.models import SideBar
