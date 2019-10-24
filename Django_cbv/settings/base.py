@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Django_cbv.urls'
 
 # THEME = 'default'
-THEME = 'bootstrap'  # 主题配置
+THEME = 'bootstrap'  # 主题配置、可以方便切换主题
 
 TEMPLATES = [
     {
