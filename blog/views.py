@@ -43,7 +43,7 @@ def post_detail(request, post_id):
 
 class CommonViewMixin:
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super().get_context_data(**kwargs)  # 这个地方是否存在问题？？？
         context.update({
             'sidebars': SideBar.get_all(),
         })
