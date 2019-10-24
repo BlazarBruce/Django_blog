@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',  # 静态文件管理的app、在开发环境中提供静态资源的服务功能
     'blog.apps.BlogConfig',
     'config.apps.ConfigConfig',
     'comment.apps.CommentConfig',
@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Django_cbv.urls'
 
 # THEME = 'default'
-THEME = 'bootstrap'
+THEME = 'bootstrap'  # 主题配置
 
 TEMPLATES = [
     {
@@ -113,6 +113,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+# STATIC_ROOT = '/temp/static/'  # 用来配置部署之后的静态资源路径
 
 STATIC_URL = '/static/'  # 别名
 
