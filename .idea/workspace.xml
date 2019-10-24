@@ -2,19 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52bd67b-67b3-4022-84d5-024c4d723db5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08d7a43c-1e24-491b-9353-ed9f20856399.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08d7a43c-1e24-491b-9353-ed9f20856399.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/list1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/config/blocks/sidebar_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/hot_map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/blog/list1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/config/blocks/sidebar_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/hot_map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/static_page/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/static_page/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_cbv/themes/default/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django_cbv/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_cbv/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0002_userinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +71,26 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,6 +152,7 @@
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/Django_cbv/settings/base.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/base.html" />
       </list>
     </option>
   </component>
@@ -141,6 +176,50 @@
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static_page" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -153,7 +232,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Django_cbv/themes/bootstrap" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,17 +244,17 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TEST1\Django_blog\Django_cbv\themes\bootstrap" />
+      <recent name="D:\TEST1\Django_blog\Django_cbv\static" />
+      <recent name="D:\TEST1\Django_blog\Django_cbv\themes\default" />
+      <recent name="D:\TEST\Django_cbv\Django_cbv\templates" />
+      <recent name="D:\TEST\Django_cbv\Django_cbv\templates\static_page" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\TEST\Django_blog\Django_cbv\Django_cbv" />
       <recent name="D:\TEST\Django_blog\Django_cbv\templates\blog" />
       <recent name="D:\new_proj\Django_cbv\blog\reference" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\TEST\Django_cbv\Django_cbv\templates" />
-      <recent name="D:\TEST\Django_cbv\Django_cbv\templates\static_page" />
-      <recent name="D:\TEST\Django_cbv\Django_cbv\temp" />
-      <recent name="D:\TEST\Django_cbv\document" />
-      <recent name="D:\TEST\Django_cbv\开发文档" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,7 +445,7 @@
       <workItem from="1571789646982" duration="15753000" />
       <workItem from="1571877820484" duration="8425000" />
       <workItem from="1571889827086" duration="314000" />
-      <workItem from="1571890228041" duration="27000" />
+      <workItem from="1571890228041" duration="4920000" />
     </task>
     <task id="LOCAL-00001" summary="提交博客系统文件">
       <created>1571388080481</created>
@@ -606,17 +685,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571888216942</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="删除多于的APP">
+      <created>1571890332738</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1571890332738</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84770000" />
+    <option name="totallyTimeSpent" value="89663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19023137" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19023137" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32823366" />
@@ -633,7 +720,7 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Run" order="13" weight="0.4798331" />
       <window_info anchor="bottom" id="manage.py@Django_cbv" order="14" weight="0.32962447" />
-      <window_info anchor="right" id="Database" order="0" weight="0.3958869" />
+      <window_info anchor="right" id="Database" order="0" weight="0.49164525" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="SciView" order="2" weight="0.32969153" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
@@ -687,7 +774,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="使用模板语言编辑html文件" />
     <MESSAGE value="项目结构调整" />
     <MESSAGE value="上传图片" />
     <MESSAGE value="修改图片名称为英文名" />
@@ -712,7 +798,8 @@
     <MESSAGE value="引入BootStrap、实现demo.html" />
     <MESSAGE value="引入BootStrap、实现简单的界面" />
     <MESSAGE value="注释BootStrap中的组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="注释BootStrap中的组件" />
+    <MESSAGE value="删除多于的APP" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除多于的APP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_cbv$tests.coverage" NAME="tests Coverage Results" MODIFIED="1571717903706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
@@ -722,41 +809,6 @@
     <SUITE FILE_PATH="coverage/Django_cbv$base.coverage" NAME="base Coverage Results" MODIFIED="1571710560874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Django_cbv/settings" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Django_cbv/templates/blog/list1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/reference/adminforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="9" column="77" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/config_link">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d9bc0bc6-ab0b-4339-bd81-e1395ea754fe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/config_sidebar">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d9bc0bc6-ab0b-4339-bd81-e1395ea754fe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/blog_tag">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="d9bc0bc6-ab0b-4339-bd81-e1395ea754fe">
@@ -767,15 +819,6 @@
       </provider>
     </entry>
     <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/blog_post_tag">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d9bc0bc6-ab0b-4339-bd81-e1395ea754fe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/blog_post">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="d9bc0bc6-ab0b-4339-bd81-e1395ea754fe">
           <filtering>
@@ -1029,16 +1072,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py" />
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-          <folding>
-            <element signature="e#338#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Django_cbv/templates/static_page/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2856">
@@ -1046,10 +1079,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://08d7a43c-1e24-491b-9353-ed9f20856399/schema/main/table/blog_post">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="bc598950-b65c-44e7-a8f2-974af1a7bc41">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="e#338#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/themes/default/templates/blog/base.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/static/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Django_cbv/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        <state relative-caret-position="144">
+          <caret line="66" column="61" lean-forward="true" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
         </state>
       </provider>
     </entry>

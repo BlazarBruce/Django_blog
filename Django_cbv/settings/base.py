@@ -53,12 +53,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Django_cbv.urls'
 
+THEME = 'default'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'themes',THEME, 'templates')],
+        'APP_DIRS': True,  # 我们在上面的DIRS 中新增了Django 模板的查找目录，也就是Django
+        # 会首先去这个目录下查找对应模板。在找不到模板的情况下，会去各个App 下查找，
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
