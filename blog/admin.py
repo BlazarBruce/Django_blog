@@ -4,6 +4,8 @@
 密码：123456
 创建超级用户：python manage.py createsuperuser
 
+注意：该py文件只是完成了怎么用（配置）、需要对源码流程进行梳理！！！！
+
 """
 from django.contrib import admin
 from django.urls import reverse
@@ -23,9 +25,9 @@ class PostInline(admin.TabularInline):  # StackedInline 工口e 样式不同
     model = Post
 
 
-# 在admin中注册类
+# 在admin中注册类、添加用户自己的信息
 @admin.register(Category, site=custom_site)
-class CategoryAdmin(BaseOwnerAdmin):
+class CategoryAdmin(BaseOwnerAdmin):  # 分类后台管理类、需要了解源码流程
     inlines = [PostInline, ]
     list_display = ('name', 'status', 'is_nav', 'created_time', 'post_count')
     fields = ('name', 'status', 'is_nav')
@@ -41,7 +43,7 @@ class CategoryAdmin(BaseOwnerAdmin):
 
 
 @admin.register(Tag, site=custom_site)
-class TagAdmin(BaseOwnerAdmin):
+class TagAdmin(BaseOwnerAdmin):  # 标签后台管理类、需要了解源码流程
     list_display = ('name', 'status', 'created_time')
     fields = ('name', 'status')
 
@@ -65,7 +67,7 @@ class CategoryOwnerFilter(admin.SimpleListFilter):
 
 
 @admin.register(Post, site=custom_site)
-class PostAdmin(BaseOwnerAdmin):
+class PostAdmin(BaseOwnerAdmin):  # 文章后台管理类、需要了解远吗流程
     form = PostAdminForm
     list_display = [
         'title', 'category', 'status',
@@ -135,5 +137,5 @@ class PostAdmin(BaseOwnerAdmin):
 
 # 查看日志功能
 @admin.register(LogEntry, site=custom_site)
-class LogEntryAdmin(admin.ModelAdmin):
+class LogEntryAdmin(admin.ModelAdmin):  # 日志后台管理类、需要、了解源码流程
     list_display = ['object_repr', 'object_id', 'action_flag', 'user', 'change_message']
