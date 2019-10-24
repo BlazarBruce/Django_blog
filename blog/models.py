@@ -14,7 +14,7 @@ QuerySets、处理对应的数据库操作
 """
 
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User  # 选用Django自带的User类管理用户
 
 class Category(models.Model):
     STATUS_NORMAL = 1
@@ -27,7 +27,7 @@ class Category(models.Model):
     name = models.CharField(max_length=50, verbose_name="名称")
     status = models.PositiveIntegerField(default=STATUS_NORMAL, choices=STATUS_ITEMS, verbose_name="状态")
     is_nav = models.BooleanField(default=False, verbose_name="是否为导航")
-    owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.DO_NOTHING)
+    owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.DO_NOTHING)  # 外检、连接到Django自带的User
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
     class Meta:
@@ -98,8 +98,8 @@ class Post(models.Model):
     is_md = models.BooleanField(default=False, verbose_name="markdown语法")
     # 创建一个外键、此处没有做好数据表关系设计(理解)
     category = models.ForeignKey(Category, verbose_name="分类", on_delete=models.DO_NOTHING)
-    tag = models.ManyToManyField(Tag, verbose_name="标签")
-    owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.DO_NOTHING)
+    tag = models.ManyToManyField(Tag, verbose_name="标签")  # 处理对对多的关系
+    owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.DO_NOTHING)  # 处理一对多、多对一的关系
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")  # verbose_name 字段对应的展示文案
 
     # pv和UV ，它们用来统计每篇文章的防问量

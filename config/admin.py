@@ -4,7 +4,7 @@ from .models import Link, SideBar
 
 # 后台开发的时候用到了装饰器
 @admin.register(Link)
-class LinkAdmin(admin.ModelAdmin):
+class LinkAdmin(admin.ModelAdmin):  # 友链后台管理配置
     list_display = ('title', 'href', 'status', 'weight', 'created_time')
     fields = ('title', 'href', 'status', 'weight')
 
@@ -14,7 +14,7 @@ class LinkAdmin(admin.ModelAdmin):
 
 
 @admin.register(SideBar)
-class SideBarAdmin(admin.ModelAdmin):
+class SideBarAdmin(admin.ModelAdmin):  # 侧边栏后台管理配置
     list_display = ('title', 'display_type', 'content', 'created_time')
     fields = ('title', 'display_type', 'content')
 
