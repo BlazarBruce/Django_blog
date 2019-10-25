@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    {% block extra_head %}
+    {% endblock %}
+
     <style>
         .post {
             margin-bottom: 5px;  {#配置每个post 卡片下面的问隔#}

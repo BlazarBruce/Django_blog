@@ -12,7 +12,7 @@ QuerySets、处理对应的数据库操作
 一个系统的根基就是数据，所有业务都是建立在这个根基之上的。如果从数据层开始
 就出了问题（偏差），那么其他层的开发也不会得到好结果。
 """
-
+import mistune
 from django.db import models
 from django.contrib.auth.models import User  # 选用Django自带的User类管理用户
 
@@ -112,6 +112,14 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        if self.is_md:
+            self.content_html = mistune.markdown(self.content)
+        else:
+            self.content_html = self.content
+        super().save(*args, **kwargs)
+
 
     @staticmethod
     def get_by_tag(tag_id):
