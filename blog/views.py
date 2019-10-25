@@ -3,6 +3,7 @@
 特别是CBV
 FBV：类方法、静态方法、属性方法
 """
+from datetime import date
 
 from django.shortcuts import render
 from .models import Post, Tag, Category
@@ -10,6 +11,8 @@ from config.models import SideBar
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
 from django.db.models import Q, F  # 这是Django提供的条件表达式(conditional-expression),用来完成复杂的操作。
+from django.core.cache import cache
+
 from comment.forms import CommentForm
 from comment.models import Comment
 
@@ -101,6 +104,27 @@ class PostDetailView(CommonViewMixin, DetailView):
     context_object_name = 'post'
     pk_url_kwarg = 'post_id'
 
+    # 访问量统计
+    def handle_visited(self):
+        increase_pv = False
+        increase_uv = False
+        uid = self.request.uid
+        pv_key = 'pv:%s:%s' % (uid, self.request.path)
+        if not cache.get(pv_key):
+            increase_pv = True
+            cache.set(pv_key, 1, 1 * 60)  # 1分钟有效
+
+        uv_key = 'uv:%s:%s:%s' % (uid, str(date.today()), self.request.path)
+        if not cache.get(uv_key):
+            increase_uv = True
+            cache.set(uv_key, 1, 24 * 60 * 60)  # 24小时有效
+
+        if increase_pv and increase_uv:
+            Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1, uv=F('uv') + 1)
+        elif increase_pv:
+            Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1)
+        elif increase_uv:
+            Post.objects.filter(pk=self.object.id).update(uv=F('uv') + 1)
 
 
 # 用于搜索
