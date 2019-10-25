@@ -10,6 +10,8 @@ from config.models import SideBar
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
 from django.db.models import Q, F  # 这是Django提供的条件表达式(conditional-expression),用来完成复杂的操作。
+from comment.forms import CommentForm
+from comment.models import Comment
 
 def post_list(request, category_id=None, tag_id=None):
     tag = None
@@ -93,10 +95,21 @@ class TagView(IndexView):
 
 
 class PostDetailView(CommonViewMixin, DetailView):
-    queryset = Post.objects.filter(status=Post.STATUS_NORMAL)
+    # queryset = Post.objects.filter(status=Post.STATUS_NORMAL)
+    queryset = Post.latest_posts()
     template_name = 'blog/detail.html'
     context_object_name = 'post'
     pk_url_kwarg = 'post_id'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context.update({
+            'comment_form': CommentForm,
+            'comment_list': CommentForm.get_by_target(self.request.patch),
+        })
+        return context
+
+
 
 # 用于搜索
 class SearchView(IndexView):

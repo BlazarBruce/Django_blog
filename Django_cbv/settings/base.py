@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.contenttypes',  # 维护Model 和我们要用到的content_type 之间的关系
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',  # 静态文件管理的app、在开发环境中提供静态资源的服务功能
