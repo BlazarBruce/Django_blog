@@ -21,12 +21,13 @@
             <ul class="navbar-nav mr-auto">
             {% for cate in navs %}
               <li class="nav-item">
-                  <a class="nav-link" href="{% url 'category-list' cate.id %}">{{ cate.name }}</a>
+{#                  <a class="nav-link" href="{% url 'category-list' cate.id %}">{{ cate.name }}</a>#}
+                  <a class="nav-link" href="#">{{ cate.name }}</a>
               </li>
             {% endfor %}
             </ul>
-            <form class="form-inline my-2 my-lg-0" action='' method='GET'>
-                <input class="form-control mr-sm-2" type="search"  placeholder="Search" aria-label="Search">
+            <form class="form-inline " action='/search/' method='GET'>
+                 <input class="form-control" type="search" name="keyword" placeholder="Search" aria-label="Search" value="{{ keyword }}">
               <button class="btn btn-outline-success" type="submit">搜索</button>
             </form>
           </div>
@@ -65,7 +66,7 @@
             <hr/>
             <nav class="nav category">
             {% for cate in categories %}
-            <a href="{% url 'category-list' cate.id %}" class="nav-link">{{ cate.name }}</a>
+                <a href="{% url 'category-list' cate.id %}" class="nav-link">{{ cate.name }}</a>
             {% endfor %}
             </nav>
         </div>
