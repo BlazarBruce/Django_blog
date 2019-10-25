@@ -157,3 +157,4 @@ class userInfo(models.Model):
         # 重新定义表名.
         db_table = 'user_info'
 
+
