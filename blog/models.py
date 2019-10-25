@@ -155,5 +155,5 @@ class userInfo(models.Model):
 
     class Meta:
         # 重新定义表名.
-        db_table = 'users_info'
+        db_table = 'user_info'
 
