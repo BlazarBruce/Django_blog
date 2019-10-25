@@ -54,8 +54,3 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['nickname', 'email', 'website', 'content']
-
-    @classmethod
-    def get_by_target(cls, target):
-        return cls.objects.filter(target=target, status=cls.STATUS_NORMAL)
-
