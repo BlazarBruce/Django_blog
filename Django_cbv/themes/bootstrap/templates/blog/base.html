@@ -25,8 +25,8 @@
             <ul class="navbar-nav mr-auto">
             {% for cate in navs %}
               <li class="nav-item">
-{#                  <a class="nav-link" href="{% url 'category-list' cate.id %}">{{ cate.name }}</a>#}
-                  <a class="nav-link" href="#">{{ cate.name }}</a>
+              <!-- url 'category-list' cate.id %} 反向解析url -->
+                  <a class="nav-link" href="{% url 'category-list' cate.id %}">{{ cate.name }}</a>
               </li>
             {% endfor %}
             </ul>

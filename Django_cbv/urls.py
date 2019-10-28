@@ -31,7 +31,7 @@ from comment.views import CommentView
 urlpatterns = [
     # 路由配置及参数传递均没有问题
     url(r'^$', IndexView.as_view(), name='index'),
-    url(r'^category/(?P<category_id>\d+)/$', CategoryView.as_view(), name='category-id'),
+    url(r'^category/(?P<category_id>\d+)/$', CategoryView.as_view(), name='category-list'),
     url(r'^tag/(?P<tag_id>\d+)/$', TagView.as_view(), name='tag-id'),
     url(r'^post/(?P<post_id>\d+).html$', PostDetailView.as_view(), name='post-detail'),  # 分组命名匹配、这个url有问题！！！
     url(r'^links/$', LinkListView.as_view(), name='links'),
