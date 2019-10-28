@@ -104,6 +104,11 @@ class PostDetailView(CommonViewMixin, DetailView):
     context_object_name = 'post'
     pk_url_kwarg = 'post_id'
 
+    def get(self, request, *args, **kwargs):
+        response = super().get(request, *args, **kwargs)
+        self.handle_visited()
+        return response
+
     # 访问量统计
     def handle_visited(self):
         increase_pv = False
@@ -118,7 +123,7 @@ class PostDetailView(CommonViewMixin, DetailView):
         if not cache.get(uv_key):
             increase_uv = True
             cache.set(uv_key, 1, 24 * 60 * 60)  # 24小时有效
-
+        # 用于判断是否有缓存，如果没有，则进行 +l 操作
         if increase_pv and increase_uv:
             Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1, uv=F('uv') + 1)
         elif increase_pv:
