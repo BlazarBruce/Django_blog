@@ -44,4 +44,3 @@ urlpatterns = [
     url(r'^admin/', custom_site.urls, name='admin'),  # 普通用户
 
 ]
-
