@@ -15,6 +15,7 @@ QuerySets、处理对应的数据库操作
 import mistune
 from django.db import models
 from django.contrib.auth.models import User  # 选用Django自带的User类管理用户
+from django.utils.functional import cached_property
 
 class Category(models.Model):
     STATUS_NORMAL = 1
@@ -119,6 +120,11 @@ class Post(models.Model):
         else:
             self.content_html = self.content
         super().save(*args, **kwargs)
+
+    # 是帮我们把返回的数据绑到实例上，不用每次访问时都去执行ta gs 函数中的代码。
+    @cached_property
+    def tag(self):
+        return ','.join(self.tag.values_list('name', flat=True))
 
 
     @staticmethod
