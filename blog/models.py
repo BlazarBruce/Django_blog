@@ -121,7 +121,7 @@ class Post(models.Model):
             self.content_html = self.content
         super().save(*args, **kwargs)
 
-    # 是帮我们把返回的数据绑到实例上，不用每次访问时都去执行ta gs 函数中的代码。
+    # 是帮我们把返回的数据绑到实例上，不用每次访问时都去执行ta gs 函数中的代码。有问题！！！
     @cached_property
     def tag(self):
         return ','.join(self.tag.values_list('name', flat=True))
