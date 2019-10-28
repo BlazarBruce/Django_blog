@@ -41,6 +41,7 @@
             <p class="lead">Django博客系统</p>
         </div>
 	</div>
+
 	<div class="container main">
         <div class="row">
             <div class="col-9 post-list">
@@ -53,9 +54,7 @@
                     <div class="card sidebar">
                         <div class="card-body">
                             <h4 class="card-title">{{ sidebar.title }}</h4>
-                            <p>
-                            {{ sidebar.content_html }}
-                            </p>
+                            <p>{{ sidebar.content_html }}</p>
                         </div>
                     </div>
                     {% endfor %}

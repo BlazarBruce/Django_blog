@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 class CommonViewMixin(ListView):
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)  # 这个地方是否存在问题？？？
+        context = super().get_context_data(**kwargs)
         context.update({
             'sidebars': SideBar.get_all(),
         })
@@ -45,10 +45,13 @@ class CommonViewMixin(ListView):
 
 # 基于CBV的实现
 class IndexView(CommonViewMixin, ListView):
-    queryset = Post.latest_posts()
+    # queryset = Post.latest_posts()
+    queryset = Post.objects.filter(status=Post.STATUS_NORMAL) \
+        .select_related('owner') \
+        .select_related('category')
     paginate_by = 5
     context_object_name = 'post_list'
-    template_name = 'blog/list1.html'
+    template_name = 'blog/list.html'
 
 class CategoryView(IndexView):
     def get_context_data(self, **kwargs):

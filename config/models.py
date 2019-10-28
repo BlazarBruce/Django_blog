@@ -56,11 +56,17 @@ class SideBar(models.Model):
     class Meta:
         verbose_name = verbose_name_plural = "侧边栏"
 
+    def __str__(self):
+        return self.title
+
+    def _render_latest(self):
+        pass
+
     @classmethod
     def get_all(cls):
         return cls.objects.filter(status=cls.STATUS_SHOW)
 
-    @property
+
     def content_html(self):
         """ 通过直接渲染模板 """
         from blog.models import Post  # 避免循环引用
@@ -86,4 +92,4 @@ class SideBar(models.Model):
             result = render_to_string('config/blocks/sidebar_comments.html', context)
         return result
 
-
+# 问题：此处的资源怎样整合到博客页面中？？？
