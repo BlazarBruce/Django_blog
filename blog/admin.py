@@ -120,7 +120,7 @@ class PostAdmin(BaseOwnerAdmin):  # 文章后台管理类、需要了解远吗�
     ))
 
     # filter_horizontal = ('tag',)
-    filter_vertical = ('tag',)
+    filter_vertical = ('tag',)  # 报错 ！！！！
 
     def operator(self, obj):
         return format_html(
