@@ -34,7 +34,8 @@ urlpatterns = [
     url(r'^search/$', SearchView.as_view(), name='search'),  # 用于搜索功能
     url(r'^comment/$', CommentView.as_view(), name='comment'),
     url(r'^author/(?P<owner_id>\d+)/$', AuthorView.as_view(), name='author'),
-    url(r'^post/(?P<post_id>\d+).html$', PostDetailView.as_view(), name='post-detail'),  # 分组命名匹配、这个url有问题！！！
+    # 分组命名匹配、这个url有问题！！！对于FBV没有问题
+    url(r'^post/(?P<post_id>\d+).html$', PostDetailView.as_view(), name='post-detail'),
     url(r'^links/$', LinkListView.as_view(), name='links'),
     url(r'^rss|feed/', LatestPostFeed(), name='rss'),
     url(r'^sitemap\.xml$', cache_page(60 * 20, key_prefix='sitemap_cache_')(sitemap_views.sitemap),{'sitemaps': {'posts': PostSitemap}}),

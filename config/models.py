@@ -66,7 +66,6 @@ class SideBar(models.Model):
     def get_all(cls):
         return cls.objects.filter(status=cls.STATUS_SHOW)
 
-
     def content_html(self):
         """ 通过直接渲染模板 """
         from blog.models import Post  # 避免循环引用

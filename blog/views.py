@@ -14,16 +14,8 @@ from django.core.cache import cache
 
 logger = logging.getLogger(__name__)
 
-# 有问题！！！！-----此处自写继承ListView
-class CommonViewMixin(ListView):
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context.update({
-            'sidebars': SideBar.get_all(),
-        })
-        context.update(Category.get_navs())
-        return context
+class CommonViewMixin:
 
     def get_sidebars(self):
         return SideBar.objects.filter(status=SideBar.STATUS_SHOW)
@@ -46,9 +38,7 @@ class CommonViewMixin(ListView):
 # 基于CBV的实现
 class IndexView(CommonViewMixin, ListView):
     # queryset = Post.latest_posts()
-    queryset = Post.objects.filter(status=Post.STATUS_NORMAL) \
-        .select_related('owner') \
-        .select_related('category')
+    queryset = Post.objects.filter(status=Post.STATUS_NORMAL).select_related('owner').select_related('category')
     paginate_by = 5
     context_object_name = 'post_list'
     template_name = 'blog/list.html'
@@ -94,6 +84,7 @@ class PostDetailView(CommonViewMixin, DetailView):
     pk_url_kwarg = 'post_id'
 
     def get(self, request, *args, **kwargs):
+        # print(*args)  # TypeError: 'post_id' is an invalid keyword argument for this function
         response = super().get(request, *args, **kwargs)
         self.handle_visited()
         return response
@@ -138,7 +129,7 @@ class SearchView(IndexView):
         return queryset.filter(Q(title__icontains=keyword) | Q(desc__icontains=keyword))
 
 
-# 用于处理作则
+# 用于处理作者
 class AuthorView(IndexView):
     def get_queryset(self):
         queryset = super().get_queryset()
