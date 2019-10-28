@@ -3,9 +3,8 @@
 特别是CBV
 FBV：类方法、静态方法、属性方法
 """
+import logging
 from datetime import date
-
-from django.shortcuts import render
 from .models import Post, Tag, Category
 from config.models import SideBar
 from django.views.generic import ListView, DetailView
@@ -13,41 +12,11 @@ from django.shortcuts import get_object_or_404
 from django.db.models import Q, F  # 这是Django提供的条件表达式(conditional-expression),用来完成复杂的操作。
 from django.core.cache import cache
 
-from comment.forms import CommentForm
-from comment.models import Comment
+logger = logging.getLogger(__name__)
 
-def post_list(request, category_id=None, tag_id=None):
-    tag = None
-    category = None
-    if tag_id:
-        post_list, tag = Post.get_by_tag(tag_id)
-    elif category_id:
-        post_list, category = Post.get_by_category(category_id)
-    else:
-        post_list = Post.latest_posts()
+# 有问题！！！！-----此处自写继承ListView
+class CommonViewMixin(ListView):
 
-    context = {
-        'category': category,
-        'tag':tag,
-        'post_list':post_list,
-        'sidebars': SideBar.get_all(),
-    }
-    context.update(Category.get_navs())
-    return render(request, 'blog/list.html', context=context)
-
-def post_detail(request, post_id):
-    try:
-        post = Post.objects.get(id=post_id)
-    except Post.DoesNotExist:
-        post = None
-    context = {
-        'post': post,
-        'sidebars': SideBar.get_all(),
-    }
-    context.update(Category.get_navs())
-    return render(request, 'blog/detail.html', context=context)
-
-class CommonViewMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)  # 这个地方是否存在问题？？？
         context.update({
@@ -56,6 +25,23 @@ class CommonViewMixin:
         context.update(Category.get_navs())
         return context
 
+    def get_sidebars(self):
+        return SideBar.objects.filter(status=SideBar.STATUS_SHOW)
+
+    def get_navs(self):
+        categories = Category.objects.filter(status=Category.STATUS_NORMAL)
+        nav_categories = []
+        normal_categories = []
+        for cate in categories:
+            if cate.is_nav:
+                nav_categories.append(cate)
+            else:
+                normal_categories.append(cate)
+
+        return {
+            'navs': nav_categories,
+            'categories': normal_categories,
+        }
 
 # 基于CBV的实现
 class IndexView(CommonViewMixin, ListView):
