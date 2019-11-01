@@ -1,3 +1,6 @@
+"""
+apis.py的升级改进版
+"""
 from rest_framework import viewsets
 
 from .models import Post, Category
@@ -9,8 +12,8 @@ from .serializers import (
 
 class PostViewSet(viewsets.ReadOnlyModelViewSet):
     """ 提供文章接口 """
-    serializer_class = PostSerializer
-    queryset = Post.objects.filter(status=Post.STATUS_NORMAL)
+    serializer_class = PostSerializer  # 配置序列化的类
+    queryset = Post.objects.filter(status=Post.STATUS_NORMAL)  # 从数据库去数据
 
     def retrieve(self, request, *args, **kwargs):
         self.serializer_class = PostDetailSerializer
