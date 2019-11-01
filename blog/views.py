@@ -114,7 +114,8 @@ class PostDetailView(CommonViewMixin, DetailView):
 
 # 用于搜索
 class SearchView(IndexView):
-    def get_context_data(self):
+
+    def get_context_data(self, **kwargs):
         context = super().get_context_data()
         context.update({
             'keyword': self.request.GET.get('keyword', '')
