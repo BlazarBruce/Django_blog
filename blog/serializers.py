@@ -6,6 +6,7 @@ from rest_framework import serializers, pagination  # 序列化组件与分页�
 from .models import Post, Category
 
 
+
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     category = serializers.SlugRelatedField(
         read_only=True,

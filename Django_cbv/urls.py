@@ -43,7 +43,6 @@ urlpatterns = [
     url(r'^sitemap\.xml$', cache_page(60 * 20, key_prefix='sitemap_cache_')(sitemap_views.sitemap),{'sitemaps': {'posts': PostSitemap}}),
     url(r'^api/post', post_list, name='post-list'),  # 该url目前无法访问
 
-
     # 后台管理url
     url(r'^super_admin/', admin.site.urls, name='super-admin'),  # 超级用户
     url(r'^admin/', custom_site.urls, name='admin'),  # 普通用户

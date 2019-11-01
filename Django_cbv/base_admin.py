@@ -23,5 +23,3 @@ class BaseOwnerAdmin(admin.ModelAdmin):
         obj.owner = request.user
         return super(BaseOwnerAdmin, self).save_model(request, obj, form, change)
 
-
-

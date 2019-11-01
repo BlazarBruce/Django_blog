@@ -15,3 +15,4 @@ class PostList(generics.ListCreateAPIView):
     posts = Post.objects.filter(status=Post.STATUS_NORMAL)  # 从数据库中去除状态蒸菜的文章
     serializer_class = PostSerializer  # 配置自定义的序列化类
 
+
