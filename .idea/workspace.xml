@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52bd67b-67b3-4022-84d5-024c4d723db5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/document/notebook.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_cbv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/review.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+              <folding>
+                <element signature="e#698#730#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1035">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="288">
+              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
               <folding>
                 <element signature="e#22#86#0" expanded="true" />
               </folding>
@@ -151,8 +159,8 @@
         <option value="$PROJECT_DIR$/blog/api.py" />
         <option value="$PROJECT_DIR$/document/review.py" />
         <option value="$PROJECT_DIR$/document/notebook.py" />
-        <option value="$PROJECT_DIR$/Django_cbv/urls.py" />
         <option value="$PROJECT_DIR$/blog/serializers.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/urls.py" />
       </list>
     </option>
   </component>
@@ -175,21 +183,6 @@
             <path>
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="document" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,14 +423,7 @@
       <workItem from="1572568508402" duration="4214000" />
       <workItem from="1572577095579" duration="9930000" />
       <workItem from="1572593307196" duration="1553000" />
-      <workItem from="1572594906230" duration="2428000" />
-    </task>
-    <task id="LOCAL-00006" summary="使用模板语言编辑html文件">
-      <created>1571648461388</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1571648461388</updated>
+      <workItem from="1572594906230" duration="2789000" />
     </task>
     <task id="LOCAL-00007" summary="项目结构调整">
       <created>1571705038037</created>
@@ -775,11 +761,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572595295955</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="代码详细注释、创建备忘录。">
+      <created>1572597625178</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1572597625178</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159155000" />
+    <option name="totallyTimeSpent" value="159516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,11 +784,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22107969" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22107969" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4993573" weight="0.6286509" />
@@ -811,7 +804,7 @@
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32962447" />
       <window_info anchor="bottom" id="Run" order="13" weight="0.28650904" />
-      <window_info anchor="bottom" id="manage.py@Django_cbv" order="14" weight="0.32962447" />
+      <window_info active="true" anchor="bottom" id="manage.py@Django_cbv" order="14" visible="true" weight="0.32962447" />
       <window_info anchor="right" id="Database" order="0" weight="0.23586118" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="SciView" order="2" weight="0.32969153" />
@@ -888,7 +881,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现模板继承、排除找不到模板的BUG" />
     <MESSAGE value="使用模板实现解耦合&#10;在开发中，解相是非常重要的概念，如果有两部分代码是相互制合的，那意味着每次这部分代码的调整都需要考虑其柄合方。不过需要提醒的是，也不能一味追求解梢，有时候适当的制合是必要的。这里可以考虑一下组件的概念以及设计模式中常说的“高内聚，低捐合” 。" />
     <MESSAGE value="实现Django CBV的逻辑&#10;编写分页逻辑。" />
     <MESSAGE value="对admin代码进行分析、确定下一步源码分析方向。" />
@@ -913,7 +905,8 @@
     <MESSAGE value="添加apis.py逻辑的升级版api.py。" />
     <MESSAGE value="配置接口文档的方法。" />
     <MESSAGE value="使用Django 的路由系统组件（注册路由）。" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Django 的路由系统组件（注册路由）。" />
+    <MESSAGE value="代码详细注释、创建备忘录。" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码详细注释、创建备忘录。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_cbv$tests.coverage" NAME="tests Coverage Results" MODIFIED="1571717903706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
@@ -929,16 +922,6 @@
     <SUITE FILE_PATH="coverage/Django_blog$test.coverage" NAME="test Coverage Results" MODIFIED="1572569967046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comment/templatetags/comment_block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Django_cbv/static/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1248,16 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#698#730#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -1268,12 +1241,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/new_proj/Django_cbv/venv/Lib/site-packages/rest_framework/documentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="288">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
             <element signature="e#22#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <element signature="e#698#730#0" expanded="true" />
           </folding>
         </state>
       </provider>

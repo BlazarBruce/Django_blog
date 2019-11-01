@@ -51,8 +51,8 @@ urlpatterns = [
     url(r'^rss|feed/', LatestPostFeed(), name='rss'),
     url(r'^sitemap\.xml$', cache_page(60 * 20, key_prefix='sitemap_cache_')(sitemap_views.sitemap),{'sitemaps': {'posts': PostSitemap}}),
     url(r'^apis/post', post_list, name='post-list'),  # 该url目前无法访问
-    url(r'^api/docs/', include_docs_urls(title='typeidea apis')),  # 配置接口文档
-    url(r'^api/', include(router.urls, namespace='api')),  # 配置接口文档
+    url(r'^api/docs/', include_docs_urls(title='Bruce apis')),  # 配置接口文档
+    # url(r'^api/', include(router.urls, namespace='api')),  # 配置接口文档
 
     # 后台管理url
     url(r'^super_admin/', admin.site.urls, name='super-admin'),  # 超级用户

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'config.apps.ConfigConfig',
     'comment.apps.CommentConfig',
     'rest_framework',  # 注册Django rest frameworek
+    # 'coreapi',
 ]
 
 MIDDLEWARE = [
