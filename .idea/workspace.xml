@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52bd67b-67b3-4022-84d5-024c4d723db5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Django_cbv/templates/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_cbv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -69,11 +66,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="655">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#698#730#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Django_cbv/templates/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -176,12 +182,13 @@
             <path>
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
               <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,7 +202,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog" />
+    <property name="last_opened_file_path" value="D:/TEST" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -207,19 +214,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TEST1\Django_blog\Django_cbv\templates" />
+      <recent name="D:\TEST1\Django_blog\blog" />
+      <recent name="D:\TEST1\Django_blog\Django_cbv\extra_apps" />
+      <recent name="D:\TEST1\Django_blog\extra_apps" />
+      <recent name="D:\TEST1\Django_blog\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\TEST1\Django_blog" />
       <recent name="D:\TEST1\Django_blog\config" />
       <recent name="D:\TEST1\Django_blog\Django_cbv\templates" />
       <recent name="D:\TEST\Django_blog\Django_cbv\Django_cbv" />
       <recent name="D:\TEST\Django_blog\Django_cbv\templates\blog" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\TEST1\Django_blog\blog" />
-      <recent name="D:\TEST1\Django_blog\Django_cbv\extra_apps" />
-      <recent name="D:\TEST1\Django_blog\extra_apps" />
-      <recent name="D:\TEST1\Django_blog\Django_cbv\templates" />
-      <recent name="D:\TEST1\Django_blog\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -421,14 +428,8 @@
       <workItem from="1572510804051" duration="1928000" />
       <workItem from="1572568508402" duration="4214000" />
       <workItem from="1572577095579" duration="9930000" />
-      <workItem from="1572593307196" duration="763000" />
-    </task>
-    <task id="LOCAL-00004" summary="实现正则路由匹配及参数传递">
-      <created>1571643947000</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1571643947000</updated>
+      <workItem from="1572593307196" duration="1553000" />
+      <workItem from="1572594906230" duration="254000" />
     </task>
     <task id="LOCAL-00005" summary="解决由于settings拆分导致的找不到资源的问题">
       <created>1571646536905</created>
@@ -766,11 +767,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572593339826</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="配置接口文档的方法。">
+      <created>1572594251772</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1572594251772</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155937000" />
+    <option name="totallyTimeSpent" value="156981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,7 +794,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.218509" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22107969" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4993573" weight="0.6286509" />
@@ -879,7 +887,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="html中添加静态文件" />
     <MESSAGE value="添加基模板 base.html" />
     <MESSAGE value="实现模板继承、排除找不到模板的BUG" />
     <MESSAGE value="使用模板实现解耦合&#10;在开发中，解相是非常重要的概念，如果有两部分代码是相互制合的，那意味着每次这部分代码的调整都需要考虑其柄合方。不过需要提醒的是，也不能一味追求解梢，有时候适当的制合是必要的。这里可以考虑一下组件的概念以及设计模式中常说的“高内聚，低捐合” 。" />
@@ -904,7 +911,8 @@
     <MESSAGE value="代码与仓库保持一致。" />
     <MESSAGE value="添加Django rest framework框架、使用序列化、分页、渲染器组件。" />
     <MESSAGE value="添加apis.py逻辑的升级版api.py。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加apis.py逻辑的升级版api.py。" />
+    <MESSAGE value="配置接口文档的方法。" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置接口文档的方法。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_cbv$tests.coverage" NAME="tests Coverage Results" MODIFIED="1571717903706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
@@ -1240,18 +1248,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/templates/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="655">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#698#730#0" expanded="true" />
           </folding>

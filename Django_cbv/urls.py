@@ -15,7 +15,7 @@ Including another URLconf
     分组命名正则表达式组的语法:(?P<name>pattern)，其中name是组的名称，pattern是要匹配的模式。
 """
 from django.contrib import admin
-from django.conf.urls import url
+from django.conf.urls import url, include
 from .custom_site import custom_site
 from django.contrib.sitemaps import views as sitemap_views
 from django.views.decorators.cache import cache_page
@@ -28,6 +28,11 @@ from comment.views import CommentView
 from blog.apis import post_list, PostList
 from blog.api import PostViewSet, CategoryViewSet
 from rest_framework.documentation import include_docs_urls  # 用于配置接口文档
+from rest_framework.routers import DefaultRouter  # Django rest framework 的路由配置
+
+
+router = DefaultRouter()
+router.register(r'post', PostViewSet, base_name='api-post')
 
 
 
@@ -44,7 +49,9 @@ urlpatterns = [
     url(r'^links/$', LinkListView.as_view(), name='links'),
     url(r'^rss|feed/', LatestPostFeed(), name='rss'),
     url(r'^sitemap\.xml$', cache_page(60 * 20, key_prefix='sitemap_cache_')(sitemap_views.sitemap),{'sitemaps': {'posts': PostSitemap}}),
-    url(r'^apis/post', post_list, include_docs_urls('Bruce apis'), name='post-list'),  # 该url目前无法访问
+    url(r'^apis/post', post_list, name='post-list'),  # 该url目前无法访问
+    url(r'^api/docs/', include_docs_urls(title='typeidea apis')),  # 配置接口文档
+    url(r'^api/', include(router.urls, namespace='api')),  # 配置接口文档
 
     # 后台管理url
     url(r'^super_admin/', admin.site.urls, name='super-admin'),  # 超级用户
