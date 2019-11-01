@@ -25,6 +25,8 @@ from blog.sitemap import PostSitemap
 from blog.views import IndexView, CategoryView, TagView, PostDetailView, SearchView, AuthorView
 from config.views import LinkListView
 from comment.views import CommentView
+from blog.apis import post_list, PostList
+
 
 urlpatterns = [
     # 路由配置及参数传递均没有问题
@@ -39,6 +41,8 @@ urlpatterns = [
     url(r'^links/$', LinkListView.as_view(), name='links'),
     url(r'^rss|feed/', LatestPostFeed(), name='rss'),
     url(r'^sitemap\.xml$', cache_page(60 * 20, key_prefix='sitemap_cache_')(sitemap_views.sitemap),{'sitemaps': {'posts': PostSitemap}}),
+    url(r'^api/post', post_list, name='post-list'),  # 该url目前无法访问
+
 
     # 后台管理url
     url(r'^super_admin/', admin.site.urls, name='super-admin'),  # 超级用户

@@ -27,3 +27,14 @@
 # 问题五：在模板HTML中也可以配置跳转路由、并且可以实现GET方法拼接字符串传参、POST方法form表单传参
 
 # 问题六：可以通过模板反向url解析、和reverse()反向解析实现解耦
+
+# 源码手动安装Python库
+# 比如：手动安装requests
+#
+# 先下载requests包 https://github.com/kennethreitz/requests
+# 解压下载的zip包
+# 进入有setup.py 的目录 ，用windows的cmd
+# 先执行 python setup.py build
+# 然后执行 python setup.py install
+# 如果不出什么问题，提示安装成功
+# 新建立一个测试项目，import requests 

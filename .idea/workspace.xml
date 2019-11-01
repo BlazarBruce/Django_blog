@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52bd67b-67b3-4022-84d5-024c4d723db5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog/apis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django_cbv/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_cbv/base_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/base_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_cbv/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_cbv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_cbv/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/review.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +58,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/apis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding>
-                <element signature="e#42#56#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#698#730#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,16 +103,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Django_cbv/settings/product.py" />
-        <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/comment/models.py" />
         <option value="$PROJECT_DIR$/comment/admin.py" />
         <option value="$PROJECT_DIR$/templates/demo_bootstrap.html" />
         <option value="$PROJECT_DIR$/开发文档/查看三方包的功能.py" />
         <option value="$PROJECT_DIR$/blog/adminform.py" />
         <option value="$PROJECT_DIR$/Django_cbv/custom_site.py" />
         <option value="$PROJECT_DIR$/blog/reference/adminx.py" />
-        <option value="$PROJECT_DIR$/Django_cbv/base_admin.py" />
         <option value="$PROJECT_DIR$/开发文档/查看三方报的功能的途径.py" />
         <option value="$PROJECT_DIR$/Django_cbv/temp/urls.py" />
         <option value="$PROJECT_DIR$/config/views.py" />
@@ -110,7 +122,6 @@
         <option value="$PROJECT_DIR$/Django_cbv/templates/blog/detail.html" />
         <option value="$PROJECT_DIR$/Django_cbv/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/Django_cbv/templates/blog/list.html" />
-        <option value="$PROJECT_DIR$/document/review.py" />
         <option value="$PROJECT_DIR$/Django_cbv/templates/blog/list1.html" />
         <option value="$PROJECT_DIR$/config/admin.py" />
         <option value="$PROJECT_DIR$/Django_cbv/templates/demo.html" />
@@ -129,23 +140,28 @@
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/views1.py" />
         <option value="$PROJECT_DIR$/blog/middleware/views.py" />
-        <option value="$PROJECT_DIR$/Django_cbv/settings/base.py" />
         <option value="$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/config/models.py" />
-        <option value="$PROJECT_DIR$/Django_cbv/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/config/migrations/test.py" />
         <option value="$PROJECT_DIR$/config/temp.py" />
         <option value="$PROJECT_DIR$/config/test.py" />
         <option value="$PROJECT_DIR$/config/tests.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/templates/base_admin.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/base_admin.py" />
+        <option value="$PROJECT_DIR$/document/review.py" />
+        <option value="$PROJECT_DIR$/blog/serializers.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/settings/base.py" />
+        <option value="$PROJECT_DIR$/blog/apis.py" />
+        <option value="$PROJECT_DIR$/Django_cbv/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="61" />
-    <option name="y" value="207" />
+    <option name="x" value="-90" />
+    <option name="y" value="61" />
     <option name="width" value="946" />
-    <option name="height" value="916" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -164,12 +180,13 @@
             <path>
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_cbv" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,7 +200,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -196,18 +213,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TEST1\Django_blog" />
       <recent name="D:\TEST1\Django_blog\config" />
       <recent name="D:\TEST1\Django_blog\Django_cbv\templates" />
       <recent name="D:\TEST\Django_blog\Django_cbv\Django_cbv" />
       <recent name="D:\TEST\Django_blog\Django_cbv\templates\blog" />
-      <recent name="D:\new_proj\Django_cbv\blog\reference" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\TEST1\Django_blog\config" />
-      <recent name="D:\TEST1\Django_blog\config\migrations" />
-      <recent name="D:\TEST1\Django_blog\blog\middleware" />
-      <recent name="D:\TEST1\Django_blog\Django_cbv\static\css" />
       <recent name="D:\TEST1\Django_blog\blog" />
+      <recent name="D:\TEST1\Django_blog\Django_cbv\extra_apps" />
+      <recent name="D:\TEST1\Django_blog\extra_apps" />
+      <recent name="D:\TEST1\Django_blog\Django_cbv\templates" />
+      <recent name="D:\TEST1\Django_blog\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -222,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Python.base">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Django_cbv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -358,10 +375,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.temp" />
-        <item itemvalue="Python.base" />
         <item itemvalue="Python.tests (2)" />
       </list>
     </recent_temporary>
@@ -408,7 +425,7 @@
       <workItem from="1572493088633" duration="8209000" />
       <workItem from="1572510804051" duration="1928000" />
       <workItem from="1572568508402" duration="4214000" />
-      <workItem from="1572577095579" duration="1979000" />
+      <workItem from="1572577095579" duration="9300000" />
     </task>
     <task id="LOCAL-00001" summary="提交博客系统文件">
       <created>1571388080481</created>
@@ -739,11 +756,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572253182513</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="代码与仓库保持一致。">
+      <created>1572585417224</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1572585417224</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147223000" />
+    <option name="totallyTimeSpent" value="154544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -758,7 +782,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2159383" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2159383" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4993573" weight="0.6286509" />
@@ -851,7 +875,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加顶部奋分类与底部分类代码。" />
     <MESSAGE value="添加侧边栏展示。" />
     <MESSAGE value="调整模型、封装好SideBar" />
     <MESSAGE value="html中添加静态文件" />
@@ -876,12 +899,13 @@
     <MESSAGE value="删除冗余代码、自写类添加继承ListView。" />
     <MESSAGE value="调整路由映射顺序。" />
     <MESSAGE value="解决没有object参数问题。" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决没有object参数问题。" />
+    <MESSAGE value="代码与仓库保持一致。" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码与仓库保持一致。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_cbv$tests.coverage" NAME="tests Coverage Results" MODIFIED="1571717903706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/Django_cbv$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1571878022668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blog" />
-    <SUITE FILE_PATH="coverage/Django_blog$base.coverage" NAME="base Coverage Results" MODIFIED="1572244594111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Django_cbv/settings" />
+    <SUITE FILE_PATH="coverage/Django_blog$base.coverage" NAME="base Coverage Results" MODIFIED="1572588160578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Django_cbv/settings" />
     <SUITE FILE_PATH="coverage/Django_blog$tests__2_.coverage" NAME="tests (2) Coverage Results" MODIFIED="1572230967874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comment" />
     <SUITE FILE_PATH="coverage/Django_blog$temp.coverage" NAME="temp Coverage Results" MODIFIED="1572504418243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/Django_cbv$views.coverage" NAME="views Coverage Results" MODIFIED="1571801086081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blog" />
@@ -892,59 +916,6 @@
     <SUITE FILE_PATH="coverage/Django_blog$test.coverage" NAME="test Coverage Results" MODIFIED="1572569967046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/migrations/0004_userinfo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://8c98b224-afaa-4299-8ef2-6aafdf622045/schema/main/table/user_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="7a1a321d-3ebe-43ab-8e1a-6e623549946c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/views/templates/technical_404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views1.py" />
-    <entry file="file://$PROJECT_DIR$/blog/sitemap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/rss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#175#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/list.html" />
     <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/static_page/demo.html" />
     <entry file="file://$PROJECT_DIR$/Django_cbv/templates/static_page/demo.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1034,13 +1005,6 @@
     <entry file="file://$PROJECT_DIR$/Django_cbv/custom_site.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/base_admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comment/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1079,16 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
-          <folding>
-            <element signature="e#337#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Django_cbv/themes/bootstrap/templates/blog/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1117,16 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="35" column="77" lean-forward="true" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-          <folding>
-            <element signature="e#698#730#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,13 +1143,6 @@
     <entry file="file://D:/interpreter/python3.6.8/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django_cbv/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1011">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/temp.py" />
     <entry file="file://$PROJECT_DIR$/config/test.py" />
     <entry file="file://$PROJECT_DIR$/comment/tests.py">
@@ -1230,12 +1167,95 @@
         <state relative-caret-position="-3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/templates/base_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/base_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="72">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#42#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps1/xadmin/.tx/config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/.tx/config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/xadmin-master/xadmin-master/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/.tx/config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document/review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+          <folding>
+            <element signature="e#337#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/apis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_cbv/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#698#730#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,6 @@
 2、我们把这段代码放到base_admin.py 文件中，跟custom_site.py 同目录即可。之所以放这里，
 是因为所有的App 都需要用到。
 """
-
 from django.contrib import admin
 
 class BaseOwnerAdmin(admin.ModelAdmin):
