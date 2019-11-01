@@ -28,7 +28,7 @@
 
 # 问题六：可以通过模板反向url解析、和reverse()反向解析实现解耦
 
-# 源码手动安装Python库
+# 问题七：源码手动安装Python库
 # 比如：手动安装requests
 #
 # 先下载requests包 https://github.com/kennethreitz/requests
@@ -38,3 +38,12 @@
 # 然后执行 python setup.py install
 # 如果不出什么问题，提示安装成功
 # 新建立一个测试项目，import requests 
+
+# 问题八：分页
+
+# 实现分页的原因;
+# 提升用户体验
+# 减轻服务器的性能损耗
+
+# 实现分页的原理及方法
+

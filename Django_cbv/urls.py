@@ -33,6 +33,7 @@ from rest_framework.routers import DefaultRouter  # Django rest framework 的路
 
 router = DefaultRouter()
 router.register(r'post', PostViewSet, base_name='api-post')
+router.register(r'category', CategoryViewSet, base_name='api-category')
 
 
 

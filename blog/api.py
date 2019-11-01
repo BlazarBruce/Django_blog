@@ -16,6 +16,7 @@ class PostViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Post.objects.filter(status=Post.STATUS_NORMAL)  # 从数据库去数据
 
     def retrieve(self, request, *args, **kwargs):
+        # 在retrieve 方法中重新设置了serializer_class 的值，这样就达到了不同接口使用不同Serializer 的目的。
         self.serializer_class = PostDetailSerializer
         return super().retrieve(request, *args, **kwargs)
 
